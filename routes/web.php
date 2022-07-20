@@ -4,7 +4,8 @@ use App\Http\Livewire\Activity;
 use App\Http\Livewire\Assistence;
 use App\Http\Livewire\Associate as LivewireAssociate;
 use App\Http\Livewire\Association;
-
+use App\Http\Livewire\Debit;
+use App\Http\Livewire\Payment;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -25,6 +26,8 @@ Route::get('associations',Association::class)->name('associations');
 Route::get('activities',Activity::class)->name('activities');
 Route::get('assistences',Assistence::class)->name('assistences');
 Route::get('associates',LivewireAssociate::class)->name('associates');
+Route::get('payments',Payment::class)->name('payments');
+Route::get('debits',Debit::class)->name('debits');
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),

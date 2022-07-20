@@ -10,7 +10,7 @@ use Livewire\Component;
 class Assistence extends Component
 {
     public $isOpen=false;
-    public $assistence_id,$status,$activity_id,$associate_id;
+
     public $activities;
     public $associates;
     public $search,$assistence;

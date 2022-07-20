@@ -2,12 +2,19 @@
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg px-4 py-4">
-                <div class="flex items-center p-2 rounded-md flex-1">
-                    <label class=" w-full relative text-gray-400 focus-within:text-gray-600 block">
+
+
+
+
+
+                <div class="flex rounded-full border-grey-light border">
+                    <label class=" w-auto flex justify-end items-center text-grey p-2">
                         <svg class="pointer-events-none w-8 h-8 absolute top-1/2 transform -translate-y-1/2 left-3" viewBox="0 0 25 25"  fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-6 h-6"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
                         <x-jet-input type="text" wire:model="search" class="w-full block pl-14" placeholder="Buscar Activity"/>
                     </label>
                 </div>
+
+
                 @if (session()->has('message'))
                     <div class="bg-teal-100 border-t-4 border-teal-500 rounded-b text-teal-900 px-4 py-3 shadow-md my-3"
                     role="alert">
@@ -33,6 +40,7 @@
                             <th class="px-4 py-2">datatime</th>
                             <th class="px-4 py-2">penalty</th>
                             <th class="px-4 py-2">association</th>
+                            <th class="px-4 py-2">Estado</th>
 
                             <th>Opciones</th>
                         </tr>
